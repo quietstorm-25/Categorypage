@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <div>
+                    <a href="#" id="women">WOMEN</a>
+                </div>
+                <div>
+                    <a href="#">MEN</a>
+                </div>
+                <div>
+                    <a href="#">KIDS</a>
+                </div>
+            </div>
+            <div>
+                <a href="../index.html"><img src="../image/logo transparent.png" alt="image-logo"></a>
+            </div>
+            <div class="headericon">
+                <div class="currency-switcher">
+                    <input type="checkbox" id="currencyDropdown">
+                    <label for="currencyDropdown" class="currency-logo"><i class="fa-regular fa-dollar-sign"></i></label>
+                    <ul class="currency-menu">
+                        <li>$ USD</li>
+                        <li>€ EUR</li>
+                        <li>¥ JPY</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="padding">
+            <div><img src="../image/Padding right.png" alt="padding right"></div>
+            <div><img src="../image/Padding right.png" alt="padding right"></div>
+            <div><img src="../image/Padding right.png" alt="padding right"></div>
+            <div><img src="../image/Padding right.png" alt="padding right"></div>
+            <div><img src="../image/Padding right.png" alt="padding right"></div>
+            <div><img src="../image/Padding right.png" alt="padding right"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h1>CART</h1>
+            <div class="cart-items">
+                <!-- First Cart Item -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <h2>Apollo</h2>
+                        <p>Running Short</p>
+                        <p><strong>$50.00</strong></p>
+                        <p>SIZE:</p>
+                        <div class="size-options">
+                            <button>XS</button>
+                            <button class="selected">S</button>
+                            <button>M</button>
+                            <button>L</button>
+                        </div>
+                        <p>COLOR:</p>
+                        <div class="color-options">
+                            <span class="color-box select" style="background-color: #D3D3C9;"></span>
+                            <span class="color-box" style="background-color: #333;"></span>
+                            <span class="color-box" style="background-color: #1A5D44;"></span>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn">+</button>
+                        <span>1</span>
+                        <button class="quantity-btn">-</button>
+                    </div>
+                    <div class="item-image">
+                        <img src="../image/Product D.png 1.png" alt="Apollo Running Short">
+                    </div>
+                </div>
+
+                <!-- Second Cart Item -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <h2>Jupiter</h2>
+                        <p>Wayfarer</p>
+                        <p><strong>$75.00</strong></p>
+                        <p>SIZE:</p>
+                        <div class="size-options">
+                            <button>S</button>
+                            <button class="selected">M</button>
+                        </div>
+                        <p>COLOR:</p>
+                        <div class="color-options">
+                            <span class="color-box select" style="background-color: #1A5D44;"></span>
+                            <span class="color-box" style="background-color: #FF8C00;"></span>
+                            <span class="color-box" style="background-color: #008B8B;"></span>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn">+</button>
+                        <span>2</span>
+                        <button class="quantity-btn">-</button>
+                    </div>
+                    <div class="item-image">
+                        <img src="../image/Product D (1).png 2.png" alt="Jupiter Wayfarer">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Summary Section -->
+            <div class="cart-summary">
+                <p>Tax 21%: <strong>$42.00</strong></p>
+                <p>Quantity: <strong>3</strong></p>
+                <p>Total: <strong>$200.00</strong></p>
+                <button class="order-btn">ORDER</button>
+            </div>
+        </div>
+    </main> 
+</body>
+</html>
