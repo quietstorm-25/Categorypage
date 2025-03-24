@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,8 @@
     <link rel="stylesheet" href="../style/styles.css">
     <script src="https://kit.fontawesome.com/096bf9b3a1.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -29,7 +32,8 @@
             <div class="headericon">
                 <div class="currency-switcher">
                     <input type="checkbox" id="currencyDropdown">
-                    <label for="currencyDropdown" class="currency-logo"><i class="fa-regular fa-dollar-sign"></i></label>
+                    <label for="currencyDropdown" class="currency-logo"><i
+                            class="fa-regular fa-dollar-sign"></i></label>
                     <ul class="currency-menu">
                         <li>$ USD</li>
                         <li>€ EUR</li>
@@ -37,7 +41,92 @@
                     </ul>
                 </div>
                 <div>
-                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></a>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample" class="notification">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span><span class="badge">3</span>
+                    </a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><span style="font-weight: bold;">My
+                                    Bags</span><span style="font-size: 0.8em;">, 3 items</span></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="cart-items">
+                                <!-- First Cart Item -->
+                                <div class="cart-item">
+                                    <div class="item-details">
+                                        <h2>Apollo</h2>
+                                        <p>Running Short</p>
+                                        <p><strong>$50.00</strong></p>
+                                        <p>SIZE:</p>
+                                        <div class="size-optionscanvas">
+                                            <button>XS</button>
+                                            <button class="selected">S</button>
+                                            <button>M</button>
+                                            <button>L</button>
+                                        </div>
+                                        <p>COLOR:</p>
+                                        <div class="color-options">
+                                            <span class="color-box selected" style="background-color: #D3D2D5;"></span>
+                                            <span class="color-box" style="background-color: #2B2B2B;"></span>
+                                            <span class="color-box" style="background-color: #0F6450;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <button class="quantity-btn">+</button>
+                                        <span>1</span>
+                                        <button class="quantity-btn">-</button>
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="../image/Product D.png" alt="Apollo Running Short">
+                                    </div>
+                                </div>
+
+                                <!-- Second Cart Item -->
+                                <div class="cart-item">
+                                    <div class="item-details">
+                                        <h2>Jupiter</h2>
+                                        <p>Wayfarer</p>
+                                        <p><strong>$75.00</strong></p>
+                                        <p>SIZE:</p>
+                                        <div class="size-optionscanvas">
+                                            <button>S</button>
+                                            <button class="selected">M</button>
+                                        </div>
+                                        <p>COLOR:</p>
+                                        <div class="color-options">
+                                            <span class="color-box selected" style="background-color: #1D1F22;"></span>
+                                            <span class="color-box" style="background-color: #15A4C3;"></span>
+                                            <span class="color-box" style="background-color: #EA8120;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <button class="quantity-btn">+</button>
+                                        <span>2</span>
+                                        <button class="quantity-btn">-</button>
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="../image/Product D (1).png" alt="Jupiter Wayfarer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <div>
+                                    <p>Total:</p>
+                                </div>
+                                <div>
+                                    <p><strong>$200.00</strong></p>
+                                </div>
+                            </div>
+                            <div class="view-checkout">
+                                <a href="./pages/cart.html"><button class="viewbag"> VIEW BAG</button></a>
+                                <button class="checkout">CHECK OUT</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -83,10 +172,15 @@
                 <p class="price"><strong>$50.00</strong></p>
                 <button class="add-to-cart">ADD TO CART</button>
                 <p class="product-description">
-                    Find stunning women's cocktail dresses <br> and party dresses. Stand out in lace and <br> metallic cocktail dresses and party <br> dresses from all your favorite brands.
+                    Find stunning women's cocktail dresses <br> and party dresses. Stand out in lace and <br> metallic
+                    cocktail dresses and party <br> dresses from all your favorite brands.
                 </p>
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
