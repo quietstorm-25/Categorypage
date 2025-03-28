@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 150px 0px 100px;
+    margin: 20px 100px 0px 0px;
     text-decoration: none;
 }
 
@@ -22,10 +22,11 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-left: 100px;
 }
 
 .nav-links a{
-    margin: 0 20px;
+    margin-right: 40px;
     text-decoration: none;
 }
 
@@ -35,8 +36,10 @@
 
 #women {
     font-size: 16px;
-    margin-right: 20px;
+    margin-right: 40px;
+    padding-bottom: 3px;
     color: #5ECE7B;
+    border-bottom: #5ECE7B 2px solid;
 }
 
 .headericon{
@@ -106,11 +109,6 @@
 
 .currency-menu li:hover{
     background-color: silver;
-}
-
-.padding {
-    display: flex;
-    margin-left: 100px;
 }
 
 .product-container {
@@ -340,3 +338,38 @@ p {
     height: 43px;
 }
 
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productpagecontainer {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0 0 0;
+    }
+
+    .product-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thumbnail-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: auto;
+    }
+
+    .main-image img{
+        margin-right: 0;
+        width: 500px
+    }
+
+    .cart-container{
+        margin-left: 0;
+    }
+  }
